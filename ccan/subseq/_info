@@ -1,0 +1,36 @@
+#include "config.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * subseq - String subsequence algorithms
+ *
+ * This module implements algorithms described in the paper:
+ *
+ * Elzinga, Cees, Sven Rahmann, and Hui Wang. "Algorithms for subsequence
+ * combinatorics." Theoretical Computer Science 409.3 (2008): 394-404.
+ *
+ * Example:
+ *
+ *   #include <assert.h>
+ *
+ *   int main(void) {
+ *     assert(2 == subseq_count_subseqs("x"));
+ *     assert(1 == subseq_count_nlong_subseqs("x"));
+ *     return 0;
+ *   }
+ *
+ * License: BSD-MIT
+ */
+int main(int argc, char *argv[])
+{
+	/* Expect exactly one argument */
+	if (argc != 2)
+		return 1;
+
+	if (strcmp(argv[1], "depends") == 0) {
+		return 0;
+	}
+
+	return 1;
+}
